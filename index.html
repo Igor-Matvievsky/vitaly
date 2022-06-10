@@ -1,0 +1,566 @@
+<!DOCTYPEhtml>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<title></title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="overlay" onclick="cartNone()"></div>
+			<header>
+				<div class="search-line">
+						<div class="search-line-sub">
+							<input type="text" placeholder="Пошук на Microsoft.com" class="search-line-sub-input">
+							<div class="search-line-sub-div">
+								<img src="search-line.png" alt="img" class="search-line-sub-div-img">
+							</div>
+						</div>
+						<button class="search-line-button" onclick="searchLineNone()">Скасувати</button>
+					</div>
+				<div class="header-wrapper">
+					<div class="header-div-left-logo">
+						<img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="hhfhfhhf" class="header-div-left-logo-img">
+					</div>
+					<ul class="header-div-left-menu-ul">
+						<li class="header-div-left-menu-ul-li">
+							<a href="" class="header-div-left-menu-ul-li-a">Microsoft 365</a>
+						</li>
+						<li class="header-div-left-menu-ul-li">
+							<a href="" class="header-div-left-menu-ul-li-a">Office</a>
+						</li>
+						<li class="header-div-left-menu-ul-li">
+							<a href="" class="header-div-left-menu-ul-li-a">Windows</a>
+						</li>
+						<li class="header-div-left-menu-ul-li">
+							<a href="" class="header-div-left-menu-ul-li-a">Xbox</a>
+						</li>
+						<li class="header-div-left-menu-ul-li">
+							<a href="" class="header-div-left-menu-ul-li-a">Головна</a>
+						</li>
+					</ul>
+				
+					<div class="header-div-right-other">
+						<div class="header-div-right-all_production">
+							<p class="header-div-right-all_production-a" onclick="cartBlock() ">Усі продукти Microsoft</p>
+						</div>
+						<div class="header-div-right-other-block-search">
+							<a class="header-div-right-other-block-search-a" onclick="return searchLineBlock()">Знайти</a>
+						</div>
+						<div class="header-div-right-other-block-cart">
+							<a href="" class="header-div-right-other-block-cart-a">Кошик</a>
+						</div>
+						<div class="header-div-right-other-block-sing">
+							<a href="" class="header-div-right-other-block-sing-a">Вхід</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="all_production-add_div">
+				<div class="all_production-add_div-sub">
+					
+				</div>
+				<div class="all_production-add_div-sub">
+					
+				</div>
+				<div class="all_production-add_div-sub">
+					
+				</div>
+				<div class="all_production-add_div-sub">
+					
+				</div>
+				<div class="all_production-add_div-sub">
+					
+				</div>
+				<div class="all_production-add_div-sub">
+					
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="cart">
+					<div class="cart-top">
+						<div class="cart-top">
+							<div class="cart-top-div">
+								<p class="cart-top-div-p">Програмне забезпечення</p>
+								<br>
+								<ul class="cart-top-div-ul">
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Програми для Windows</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Outlook</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Skype</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">OneNote</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Microsoft teams</a>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="cart-top-div">
+								<p class="cart-top-div-p">Комп'ютери та пристрої</p>
+								<br>
+								<ul class="cart-top-div-ul">
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Придбати Xbox</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Комп'ютерні аксесуари</a>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="cart-top-div">
+								<p class="cart-top-div-p">Розваги</p>
+								<br>
+								<ul class="cart-top-div-ul">
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Комп’ютерні ігри</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Ігри для Windows</a>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="cart-top-div">
+								<p class="cart-top-div-p">Бізнес</p>
+								<br>
+								<ul class="cart-top-div-ul">
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Microsoft Cloud</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Захисний комплекс Microsoft</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Azure</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Dynamics 365</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Microsoft 365 для бізнесу</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Microsoft для<br> промисловості</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Microsoft Power Platform</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Windows 365</a>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="cart-top-div">
+								<p class="cart-top-div-p">Розробка й ІТ</p>
+								<br>
+								<ul class="cart-top-div-ul">
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Центр розробників</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Документація</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Microsoft Learn</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Технічна спільнота Microsoft</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Ринок Azure</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">AppSource</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Visual Studio</a>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="cart-top-div">
+								<p class="cart-top-div-p">Інші</p>
+								<br>
+								<ul class="cart-top-div-ul">
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Безкоштовні завантаження та безпека</a>
+									</li>
+									<li class="cart-top-div-ul-li">
+										<a href="" class="cart-top-div-ul-li-a">Освіта</a>
+									</li>
+								</ul>
+							</div>
+							
+							
+						</div>
+					</div>
+					<div class="cart-bottom">
+						<a href="" class="cart-bottom-a">ПЕРЕГЛЯНУТИ КАРТУ САЙТУ</a>
+					</div>
+				</div>
+			</div>
+			<main>
+				<nav class="main-win_11">
+					<div class="main-win_11-div">
+						<div class="main-win_11-div-subdiv">
+							<h1 class="main-win_11-div-subdiv-h1">
+								<a href="" class="main-win_11-div-subdiv-h1">
+									Призначено для життя –<br> сьогодні та в майбутньому
+								</a>
+							</h1>
+							<p class="main-win_11-div-subdiv-p">
+								<a href="" class="main-win_11-div-subdiv-p-a">
+									Наступне покоління ігор. Ваші цілі. Друзі та родина. З Windows 11 ви станете ще ближче до того, що вже полюбили.
+								</a>
+							</p>
+							<button class="main-win_11-div-subdiv-button">
+								Перевірте, чи піготовлено ваш ПК >
+							</button>
+						</div>
+					</div>
+				</nav>
+				<div class="main-microsoft-divs">
+					<div class="main-microsoft-divs-block">
+						<img 
+							src="	https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWPGs4?ver=3a6f&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+							alt="img"
+							class="main-microsoft-divs-block-img"
+						>
+						<a href="" class="main-microsoft-divs-block-a-big">
+							Microsoft 365
+						</a>
+						<a href="" class="main-microsoft-divs-block-a-small">
+							Преміум-версії програм Office, додатковий простір у хмарному сховищі, розширені засоби захисту та інші можливості – в одній зручній передплаті.
+						</a>
+						<a href="" class="main-microsoft-divs-block-a-users">
+							<p class="main-microsoft-divs-block-a-users-p">Для 6 користувачів</p> 
+						</a>
+						<br>
+						<br>
+						<a href="" class="main-microsoft-divs-block-a-users">
+							<p class="main-microsoft-divs-block-a-users-p">Для 1 користувачa</p> 
+						</a>
+					</div>
+					<div class="main-microsoft-divs-block">
+						<img 
+							src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rzE2?ver=aa0b&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+							alt="img"
+							class="main-microsoft-divs-block-img"
+						>
+						<a href="" class="main-microsoft-divs-block-a-big">
+							Microsoft Edge
+						</a>
+						<a href="" class="main-microsoft-divs-block-a-small">
+							Вражаюча швидкодія та ще більше конфіденційності, продуктивності й додаткових можливостей.
+						</a>
+						<a href="" class="main-microsoft-divs-block-a-users">
+							<p class="main-microsoft-divs-block-a-users-p">Завантажити зараз </p> 
+						</a>
+					</div>
+					<div class="main-microsoft-divs-block">
+						<img 
+							src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3hD2k?ver=6539&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+							alt="img"
+							class="main-microsoft-divs-block-img"
+						>
+						<a href="" class="main-microsoft-divs-block-a-big">
+							Microsoft OneDrive
+						</a>
+						<a href="" class="main-microsoft-divs-block-a-small">
+							Зберігайте файли й фотографії в OneDrive і відкривайте їх звідусіль та на будь-якому пристрою.
+						</a>
+						<a href="" class="main-microsoft-divs-block-a-users">
+							<p class="main-microsoft-divs-block-a-users-p">Дізнайтеся більше </p> 
+						</a>
+					</div>
+					<div class="main-microsoft-divs-block">
+						<img 
+							src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWDhA6?ver=d8db&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+							alt="img"
+							class="main-microsoft-divs-block-img"
+						>
+						<a href="" class="main-microsoft-divs-block-a-big">
+							Microsoft Teams
+						</a>
+						<a href="" class="main-microsoft-divs-block-a-small">
+							Спілкуйтесь, зідзвонюйтесь і складайте плани з рідними та друзями в Microsoft Teams – усе в одній програмі.
+						</a>
+						<a href="" class="main-microsoft-divs-block-a-users">
+							<p class="main-microsoft-divs-block-a-users-p">Дізнайтеся більше </p> 
+						</a>
+					</div>
+				</div>
+				<nav class="main-outlook">
+					<div class="main-outlook-div">
+						<div class="main-outlook-div-subdiv">
+							<h1 class="main-outlook-div-subdiv-h1">
+								<a href="" class="main-outlook-div-subdiv-h1">
+									Outlook для iOS и Android
+								</a>
+							</h1>
+							<p class="main-outlook-div-subdiv-p">
+								<a href="" class="main-outlook-div-subdiv-p-a">
+									Будьте на зв'язку. Організовуйте. Встигайте більше.
+								</a>
+							</p>
+							<button class="main-outlook-div-subdiv-button">
+								Завантажити зараз >
+							</button>
+						</div>
+					</div>
+				</nav>
+				<div class="main-for_busines">
+					<div class="main-for_busines-text_line">
+						<p class="main-for_busines-text_line-p">Для бізнесу</p>
+					</div>
+					<div class="main-for_busines-divs">
+						<div class="main-for_busines-divs-block">
+							<img 
+								src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4E4rT?ver=2072&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true"
+								alt="img"
+								class="main-microsoft-divs-block-img"
+							>
+							<a href="" class="main-microsoft-divs-block-a-big">
+								Microsoft 365 для бізнесу
+							</a>
+							<a href="" class="main-microsoft-divs-block-a-small">
+								Залишайтеся на крок попереду з потужними програмами для зв’язку, підвищення продуктивності та безпеки.
+							</a>
+							<a href="" class="main-microsoft-divs-block-a-users">
+								<p class="main-microsoft-divs-block-a-users-p">Придбати зараз</p>
+							</a>
+						</div>
+						<div class="main-for_busines-divs-block">
+							<img 
+								src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWyG26?ver=8f21&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true"
+								alt="img"
+								class="main-microsoft-divs-block-img"
+							>
+							<a href="" class="main-microsoft-divs-block-a-big">
+								Microsoft Viva
+							</a>
+							<a href="" class="main-microsoft-divs-block-a-small">
+								Відкрийте нову платформу, яка допоможе співробітникам формувати робочі зв’язки, цілеспрямовано працювати, вчитися й розвиватися.
+							</a>
+							<a href="" class="main-microsoft-divs-block-a-users">
+								<p class="main-microsoft-divs-block-a-users-p">Дізнайтеся більше</p>
+							</a>
+						</div>
+						<div class="main-for_busines-divs-block">
+							<img 
+								src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWRDt7?ver=48fd&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+								alt="img"
+								class="main-microsoft-divs-block-img"
+							>
+							<a href="" class="main-microsoft-divs-block-a-big">
+								Відмінні рішення для вашої школи
+							</a>
+							<a href="" class="main-microsoft-divs-block-a-small">
+								Підвисьте успішність навчання школярів завдяки інклюзивним, доступним і недорогим пристроям із Windows 11 і Windows 11 SE
+							</a>
+							<a href="" class="main-microsoft-divs-block-a-users">
+								<p class="main-microsoft-divs-block-a-users-p">Докладніше</p>
+							</a>
+						</div>
+						<div class="main-for_busines-divs-block">
+							<img 
+								src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWGaY8?ver=2545&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+								alt="img"
+								class="main-microsoft-divs-block-img"
+							>
+							<a href="" class="main-microsoft-divs-block-a-big">
+								Вітаємо в Windows 365 Cloud PC
+							</a>
+							<a href="" class="main-microsoft-divs-block-a-small">
+								Працюйте безпечно з Windows у хмарі Microsoft на будь-яких пристроях.
+							</a>
+							<a href="" class="main-microsoft-divs-block-a-users">
+								<p class="main-microsoft-divs-block-a-users-p">Спробуйте вже сьогодні </p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="look-microsoft">
+					<p class="look-microsoft-p">Стежити: Microsoft</p>
+					<a href="" class="look-microsoft-a1"></a>
+					<a href="" class="look-microsoft-a2"></a>
+				</div>
+			</main>
+		</div>
+		<footer>
+				<div class="footer-top-divs">
+					<div class="footer-top-divs-block">
+						<p class="footer-top-divs-block-p">Що нового?</p>
+						<ul class="footer-top-divs-block-ul">
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft 365</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Програми для Windows 11</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-top-divs-block">
+						<p class="footer-top-divs-block-p">Microsoft Store</p>
+						<ul class="footer-top-divs-block-ul">
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Профіль облікового запису</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Центр завантажень</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Повернення</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Відстеження замовлення</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-top-divs-block">
+						<p class="footer-top-divs-block-p">Освіта</p>
+						<ul class="footer-top-divs-block-ul">
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft для освіти</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Пристрої для освіти</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft Teams для освіти</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft 365 Education</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Office Education</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Підвищення кваліфікації викладачів</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Спеціальні пропозиції для студентів і батьків</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Azure для студентів</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-top-divs-block">
+						<p class="footer-top-divs-block-p">Бізнес</p>
+						<ul class="footer-top-divs-block-ul">
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft Cloud</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Захисний комплекс Microsoft</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Azure</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Dynamics 365</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft 365</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft Advertising</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft для промисловості</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft Teams</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-top-divs-block">
+						<p class="footer-top-divs-block-p">Розробка й ІТ</p>
+						<ul class="footer-top-divs-block-ul">
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Центр розробників</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Документація</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft Learn</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Технічна спільнота Microsoft</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Ринок Azure</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">AppSource</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Microsoft Power Platform</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Visual Studio</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-top-divs-block">
+						<p class="footer-top-divs-block-p">Компанія</p>
+						<ul class="footer-top-divs-block-ul">
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Вакансії</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Конфіденційність у Microsoft</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Інвестори</a>
+							</li>
+							<li class="footer-top-divs-block-ul-li">
+								<a href="" class="footer-top-divs-block-ul-li-a">Сталий розвиток</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom-divs">
+					<div class="footer-bottom-divs-left">
+						<div class="footer-bottom-divs-left-div"></div>
+						<a href="" class="footer-bottom-divs-left-a">Українська (Україна)</a>
+					</div>
+					<div class="footer-bottom-divs-right">
+						<ul class="footer-bottom-divs-right-menu-ul">
+							<li class="footer-bottom-divs-right-menu-ul-li">
+								<a href="" class="footer-bottom-divs-right-menu-ul-li-a">Звернутися до корпорації Microsoft</a>
+							</li>
+							<li class="footer-bottom-divs-right-menu-ul-li">
+								<a href="" class="footer-bottom-divs-right-menu-ul-li-a"> Конфіденційність</a>
+							</li>
+							<li class="footer-bottom-divs-right-menu-ul-li">
+								<a href="" class="footer-bottom-divs-right-menu-ul-li-a"> Умови використання</a>
+							</li>
+							<li class="footer-bottom-divs-right-menu-ul-li">
+								<a href="" class="footer-bottom-divs-right-menu-ul-li-a"> Товарні знаки</a>
+							</li>
+							<li class="footer-bottom-divs-right-menu-ul-li">
+								<a href="" class="footer-bottom-divs-right-menu-ul-li-a"> Відомості про рекламу</a>
+							</li>
+							<li class="footer-bottom-divs-right-menu-ul-li">
+								<p class="footer-bottom-divs-right-menu-ul-li-a"> © Microsoft 2022</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,949 @@
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url('SegoeUI-SemiBold.eot');
+    src: url('SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('SegoeUI-SemiBold.woff') format('woff'),
+    url('SegoeUI-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+body {
+	margin:0px;
+	padding:0px;
+	font:18px sans-serif;
+	box-sizing:border-box;
+}
+.wrapper {
+	width:90%;
+	height:100%;
+	margin:0px auto;
+	position:relative;
+}
+.search-line {
+	width:85%;
+	height:55px;
+	float:right;
+	margin-top:0px;
+	margin-right:50px;
+	display:none;
+	position:absolute;
+	z-index:99;
+	right:1%;
+}
+.search-line-sub {
+	width:90%;
+	display:inline-block;
+	border:4px solid black;
+}
+.search-line-sub-input {
+	width:90%;
+	height:40px;
+	padding-left:10px;
+	padding-top:4px;
+	border:none;
+	outline:none;
+}
+.search-line-sub-input::placeholder {
+	font-size:17px;
+}
+.search-line-sub-div {
+	width:30px;
+	height:30px;
+	float:right;
+	margin-top:10px;
+	margin-right:5px;
+}
+.search-line-button {
+	width:100px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	background-color:white;
+	font:17px sans-serif;
+}
+header{
+	width:100%;
+	height:55px;
+	margin:0px;
+	padding:0px;
+}
+.header-wrapper {
+	width:100%;
+	height:55px;
+	display:grid;
+	grid-template-columns:10% 25% 60%;
+	grid-auto-columns:55px;
+	margin-right:0px;	
+	position:relative;
+}
+.header-div-left-logo {
+	padding-top:12px;
+	padding-left:10px;
+	height:43px;
+}
+.header-div-left-logo-img {
+	width:120px;
+}
+.header-div-left-menu-ul {
+	margin:0px 0px 0px 3%;
+	padding:0px;
+	list-style:none;
+	display:grid;
+	grid-template-columns:repeat(6, 1fr);
+	grid-column-gap:15%;
+	width:40%;
+}
+.header-div-left-menu-ul-li {
+	height:55px;
+	line-height:55px;
+	text-align:center;
+	white-space:nowrap;
+}
+.header-div-left-menu-ul-li-a {
+	color:black;
+	text-decoration:none;
+	font:13px sans-serif;
+}
+.header-div-left-menu-ul-li-a:hover {
+	border-bottom:3px solid black;
+}
+.div-other-wrap {
+	width:23%;
+	height:55px;
+	float:right;
+	position:absolute;
+	right:0px;
+}
+.header-div-right-other {
+	height:55px;
+	line-height:55px;
+	grid-column:3 / 4;	
+	float:right;
+	display:flex;
+	justify-content:space-between;
+	position:absolute;
+	right:0px;
+}
+.header-div-right-other-block-search {
+	width:auto;
+	background:url(search.jpg) no-repeat 100% 40%;
+	padding-right:30px;
+	margin-right:3%;
+}
+.header-div-right-other-block-search-a {
+	text-decoration:none;
+	display:inline-block;
+	font:13px sans-serif;
+}
+.header-div-right-other-block-search-a:hover {
+	border-bottom:3px solid black;
+}
+.header-div-right-other-block-cart {
+	width:auto;
+	background:url(cart.jpg) no-repeat 100% 50%;
+	padding-right:35px;
+	background-size:31px auto; 
+	margin-right:3%;
+}
+.header-div-right-other-block-cart-a {
+	text-decoration:none;
+	display:inline-block;
+	font:13px sans-serif;
+}
+.header-div-right-other-block-cart-a:hover {
+	border-bottom:3px solid black;
+}
+.header-div-right-other-block-sing {
+	width:auto;
+	background:url(sing.jpg) no-repeat 100% 40%;
+	padding-right:55px;
+	background-size:45px auto; 
+}
+.header-div-right-other-block-sing-a {
+	text-decoration:none;
+	display:inline-block;
+	font:13px sans-serif;
+}
+.header-div-right-all_production {
+	width:auto;
+	height:55px;
+	line-height:55px;
+	margin-right:10%;
+}
+.header-div-right-all_production-a {
+	text-decoration:none;
+	font:13px sans-serif;
+	display:inline-block;
+	white-space:nowrap;
+	position:relative;
+}
+.header-div-right-all_production-a::after {
+	font-family: "MWF-MDL2";
+    content: "^";
+	transform:rotate(180deg);
+    position: absolute;
+	top:-4px;
+    font-size: 15px;
+    display: inline-block;
+    color: currentColor;
+    font-weight: 700;
+    padding-top: 17px;
+	margin-left:5px;
+	margin-top:0px;
+}
+.overlay {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:98;
+	display:none;
+}
+.cart {
+	width:90%;
+	float:right;
+	background-color:#f2f2f2;
+	margin-right:-40px;
+	margin-top:-7px;
+	position:absolute;
+	z-index:99;
+	right:0px;
+	display:none;	
+}
+.cart-top {
+	display:flex;
+	justify-content:space-between;
+	padding-top:15px;
+	padding-left:15px;
+	padding-right:15px;
+	width:100%;
+}
+.cart-top-div {
+	width:16%;
+	text-align:left;
+}
+.cart-top-div-p {
+	font:16px sans-serif;
+	color:black;
+	width:auto;
+	font-weight:600;
+	margin:0px;
+}
+.cart-top-div-ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.cart-top-div-ul-li {
+	width:100%;
+	height:20px;
+	line-height:20px;
+	padding:20px 0px 20px 0px;
+}
+.cart-top-div-ul-li-a {
+	text-decoration:none;
+	color:#262626;
+	font:16px sans-serif;
+	display:block;
+}
+.cart-top-div-ul-li-a:hover {
+	text-decoration:underline;
+}
+.cart-bottom {
+	width:100%;
+	height:50px;
+	text-align:center;
+	background-color:rgb(230, 230, 230);
+	line-height:50px;
+	border-bottom:2px solid black;
+}
+.cart-bottom-a {
+	font:13px sans-serif;
+	text-decoration:none;
+}
+.cart-bottom-a::after {
+	content:">";
+	margin-left:5px;
+	text-decoration:none;
+}
+.cart-bottom-a:hover {
+	text-decoration:underline;
+}
+main {
+	width:100%;
+	min-height:1000px;
+	margin:0px;
+	padding:0px;
+}
+.main-win_11 {
+	margin-bottom:50px;
+	background:url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWLAmj?ver=35aa&q=0&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=0&s=1898&d=712&aim=true) no-repeat;
+	background-size:100% auto;
+	padding-left:100px;
+	display:flex;
+	align-items:center;
+	overflow:hidden;
+}
+.main-win_11-div {
+	width:700px;
+	margin-top:10%;
+	margin-bottom:10%;
+}
+.main-win_11-div-subdiv {
+	width:100%;
+}
+.main-win_11-div-subdiv-h1 {
+	font:43px sans-serif;
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+	margin:0px 0px 20px 0px;
+}
+.main-win_11-div-subdiv-p {
+	font:17px sans-serif;
+	color:#fff;
+	text-decoration:none;
+	margin:0px 0px 30px 0px;
+}
+.main-win_11-div-subdiv-p-a {
+	font:20px sans-serif;
+	color:#fff;
+	text-decoration:none;
+}
+.main-win_11-div-subdiv-button {
+	width:400px;
+	height:50px;
+	line-height:50px;
+	font:20px sans-serif;
+	background-color:#fff;
+	padding:0px 10px 0px 10px;
+}
+.main-win_11-div-subdiv-button:hover {
+	background-color:#e6e6e6;
+	text-decoration: underline solid black 3px;
+	
+}
+.main-microsoft-divs {
+	width:100%;
+	height:520px;
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-auto-column:400px;
+	grid-column-gap:2%;
+	margin-bottom:50px;
+}
+.main-microsoft-divs-block {
+	align-items:center;
+}
+.main-microsoft-divs-block-img {
+	width:100%;
+	height:auto;
+	font-weight:600;
+	margin-bottom:50px;
+}
+.main-microsoft-divs-block-a-big {
+	font:28px sans-serif;
+	color:black;
+	text-decoration:none;
+	display:block;
+	margin-bottom:10px;
+}
+.main-microsoft-divs-block-a-small {
+	font:20px sans-serif;
+	line-height:27px;
+	color:#000;
+	text-decoration:none;
+	display:block;
+	margin-bottom:10px;
+}
+.main-microsoft-divs-block-a-users {
+	text-decoration:none;
+	color:#0067b8;
+	font:20px sans-serif;
+	font-weight:bold;
+	height:20px;
+	transition:all 1s ease;
+}
+.main-microsoft-divs-block-a-users-p {
+	display:inline;
+}
+.main-microsoft-divs-block-a-users::after {
+	content:">";
+	color:#0067b8;
+}
+.main-microsoft-divs-block-a-users-p:hover {
+	border-bottom:3px solid #0067b8;
+	margin-right:7px;
+	transition:all .3s ease;
+}
+.main-outlook {
+	margin-bottom:50px;
+	background:url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2OLdz?ver=d01f&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=232&s=1898&d=712&aim=true) no-repeat;
+	background-size:100% auto;
+	padding-left:100px;
+	display:flex;
+	align-items:center;
+	overflow:hidden;
+}
+.main-outlook-div {
+	width:700px;
+	margin-top:10%;
+	margin-bottom:10%;
+}
+.main-outlook-div-subdiv {
+	width:100%;
+}
+.main-outlook-div-subdiv-h1 {
+	font:43px sans-serif;
+	font-weight:bold;
+	color:#000;
+	text-decoration:none;
+	margin:0px 0px 20px 0px;
+}
+.main-outlook-div-subdiv-p {
+	font:17px sans-serif;
+	color:#fff;
+	text-decoration:none;
+	margin:0px 0px 30px 0px;
+}
+.main-outlook-div-subdiv-p-a {
+	font:20px sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+.main-outlook-div-subdiv-button {
+	width:270px;
+	height:50px;
+	line-height:50px;
+	font:20px sans-serif;
+	background-color:#000;
+	padding:0px 10px 0px 10px;
+	color:#fff;
+}
+.main-outlook-div-subdiv-button:hover {
+	text-decoration: underline solid white 3px;
+	
+}
+.main-for_busines {
+	width:100%;
+	height:520px;
+	margin-bottom:50px;
+}
+.main-for_busines-text_line {
+	width:100%;
+	height:75px;
+	line-height:15px;
+}
+.main-for_busines-text_line-p {
+	float:left;
+	font-size:30px;
+	font-weight:bold;
+}
+.main-for_busines-divs {
+	width:100%;
+	height:400px;
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-auto-column:400px;
+	grid-column-gap:2%;
+	margin-bottom:50px;
+}
+.main-for_busines-divs-block {
+	align-items:center;
+}
+.look-microsoft {
+	width:100%;
+	height:65px;
+	line-height:65px;
+	margin-bottom:50px;
+	display:flex;
+}
+.look-microsoft-p {
+	font-size: 17px;
+    line-height: 20px;
+    color: rgba(0,0,0,.6);
+    padding-right: 15px;
+    margin-bottom: 4px;
+}
+.look-microsoft-a1 {
+	width:30px;
+	height:auto;
+	background:url(facebook.png) no-repeat;
+	background-size:30px auto;
+	background-position:center center;
+	margin-bottom:11px;
+	margin-right:20px;
+}
+.look-microsoft-a2 {
+	width:30px;
+	height:auto;
+	background:url(youtube.png) no-repeat;
+	background-size:30px auto;
+	background-position:center center;
+	margin-bottom:10px;
+}
+footer {
+	width:100%;
+	padding:30px 0px 0px 0px;
+	background-color:#f2f2f2;
+}
+.footer-top-divs {
+	width:90%;
+	margin:0px auto;
+	display:grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+.footer-top-divs-block-p {
+	font:16px sans-serif;
+	margin-bottom:15px;
+	color:black;
+}
+.footer-top-divs-block-ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;	
+}
+.footer-top-divs-block-ul-li {
+	margin-bottom:15px;
+	text-align:left;
+}
+.footer-top-divs-block-ul-li-a {
+	font:13px sans-serif;
+	text-decoration:none;
+	color:#262626;
+}
+.footer-bottom-divs {
+	width:85%;
+	height:70px;
+	padding:0px 60px 0px 60px;
+}
+.footer-bottom-divs-left {
+	width:200px;
+	height:70px;
+	line-height:70px;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	float:left
+}
+.footer-bottom-divs-left-a {
+	font:11px sans-serif;
+	text-decoration:none;
+	color:#262626;
+}
+.footer-bottom-divs-left-div {
+	content:"";
+	background:url(lang.png) no-repeat;
+	width:20px;
+	height:20px;
+	background-size:20px 20px;
+	background-position:center center;
+	display:inline-block;
+	margin-bottom:-5px;
+}
+.footer-bottom-divs-right {
+	width:63%;
+	padding:0px;
+	float:right;
+}
+.footer-bottom-divs-right-menu-ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	display:grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column-gap:3%;
+	margin-top:20px;
+}
+.footer-bottom-divs-right-menu-ul-li {
+	text-align:center;
+	
+}
+.footer-bottom-divs-right-menu-ul-li-a {
+	font:11px sans-serif;
+	text-decoration:none;
+	color:#262626;
+	white-space:nowrap;
+}
+.footer-bottom-divs-right-menu-ul-li-p {
+	font:11px sans-serif;
+	text-decoration:none;
+	color:#262626;
+	white-space:nowrap;
+	line-height:0px;
+}
+
+
+
+
+@media screen and (max-width:1400px) {
+	.header-div-right-other-block-search-a {
+		display:none;
+	}
+	.header-div-right-other-block-cart-a {
+		display:none;
+	}
+	.header-div-right-other-block-sing-a {
+		display:none;
+	}
+	.header-wrapper {
+		width:100%;
+		height:55px;
+		display:grid;
+		grid-template-columns:12% 25% 60%;
+		grid-auto-columns:55px;
+		margin-right:0px;	
+		position:relative;
+	}
+	.main-win_11 {
+		margin-bottom:50px;
+		background:url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWLAmj?ver=35aa&q=0&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=0&s=1898&d=712&aim=true) no-repeat;
+		background-size:100% auto;
+		padding-left:100px;
+		display:flex;
+		align-items:center;
+		overflow:hidden;
+	}
+	.main-win_11-div {
+		width:700px;
+		margin-top:10%;
+		margin-bottom:10%;
+	}
+	.main-win_11-div-subdiv {
+		width:100%;
+	}
+	.main-win_11-div-subdiv-h1 {
+		font:25px sans-serif;
+		font-weight:bold;
+		color:#fff;
+		text-decoration:none;
+		margin:0px 0px 20px 0px;
+	}
+	.main-win_11-div-subdiv-p {
+		font:13px sans-serif;
+		color:#fff;
+		text-decoration:none;
+		margin:0px 0px 30px 0px;
+		width:500px;
+	}
+	.main-win_11-div-subdiv-p-a {
+		font:14px sans-serif;
+		color:#fff;
+		text-decoration:none;
+	}
+	.main-win_11-div-subdiv-button {
+		width:300px;
+		height:40px;
+		line-height:50px;
+		font:14px sans-serif;
+		background-color:#fff;
+		padding:0px 10px 0px 10px;
+	}
+	.main-win_11-div-subdiv-button:hover {
+		background-color:#e6e6e6;
+		text-decoration: underline solid black 3px;
+		
+	}
+	.main-outlook {
+		margin-bottom:50px;
+		background:url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2OLdz?ver=d01f&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=232&s=1898&d=712&aim=true) no-repeat;
+		background-size:100% auto;
+		padding-left:100px;
+		display:flex;
+		align-items:center;
+		overflow:hidden;
+	}
+	.main-outlook-div {
+		width:700px;
+		margin-top:10%;
+		margin-bottom:10%;
+	}
+	.main-outlook-div-subdiv {
+		width:100%;
+	}
+	.main-outlook-div-subdiv-h1 {
+		font:25px sans-serif;
+		font-weight:bold;
+		color:#000;
+		text-decoration:none;
+		margin:0px 0px 20px 0px;
+	}
+	.main-outlook-div-subdiv-p {
+		font:13px sans-serif;
+		color:#fff;
+		text-decoration:none;
+		margin:0px 0px 30px 0px;
+	}
+	.main-outlook-div-subdiv-p-a {
+		font:14px sans-serif;
+		color:#000;
+		text-decoration:none;
+	}
+	.main-outlook-div-subdiv-button {
+		height:50px;
+		line-height:50px;
+		font:14px sans-serif;
+		background-color:#000;
+		padding:0px 10px 0px 10px;
+		color:#fff;
+	}
+	.main-outlook-div-subdiv-button:hover {
+		text-decoration: underline solid white 3px;
+		
+	}
+}
+
+
+
+
+
+
+@media screen and (max-width:1271px) {
+	.footer-bottom-divs {
+		width:70%;
+		height:70px;
+		padding:0px 60px 0px 60px;
+	}
+}
+
+
+
+
+
+
+@media screen and (max-width:1085px) {
+	.wrapper {
+		width:100%;
+		height:100%;
+		position:relative;
+	}
+	.header-div-right-other-block-search-a {
+		display:none;
+	}
+	.header-div-right-other-block-cart-a {
+		display:none;
+	}
+	.header-div-right-other-block-sing-a {
+		display:none;
+	}
+	.header-wrapper {
+		width:100%;
+		height:55px;
+		display:grid;
+		grid-template-columns:16% 25% 53%;
+		grid-auto-columns:55px;
+		margin-right:0px;	
+		position:relative;
+	}
+	.main-win_11 {
+		margin-bottom:50px;
+		background:url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWLAmj?ver=35aa&q=0&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=0&s=1898&d=712&aim=true) no-repeat;
+		background-size:120% 100%;
+		padding-left:100px;
+		display:flex;
+		align-items:center;
+		overflow:hidden;
+		height:600px;
+	}
+	.main-win_11-div {
+		width:700px;
+		margin-top:10%;
+		margin-bottom:10%;
+	}
+	.main-win_11-div-subdiv {
+		width:100%;
+	}
+	.main-win_11-div-subdiv-h1 {
+		font:27px sans-serif;
+		font-weight:bold;
+		color:#fff;
+		text-decoration:none;
+		margin:0px 0px 20px 0px;
+	}
+	.main-win_11-div-subdiv-p {
+		font:14px sans-serif;
+		color:#fff;
+		text-decoration:none;
+		margin:0px 0px 30px 0px;
+		width:500px;
+	}
+	.main-win_11-div-subdiv-p-a {
+		font:15px sans-serif;
+		color:#fff;
+		text-decoration:none;
+	}
+	.main-win_11-div-subdiv-button {
+		width:300px;
+		height:40px;
+		line-height:50px;
+		font:15px sans-serif;
+		background-color:#fff;
+		padding:0px 10px 0px 10px;
+	}
+	.main-win_11-div-subdiv-button:hover {
+		background-color:#e6e6e6;
+		text-decoration: underline solid black 3px;
+		
+	}
+	.main-outlook {
+		margin-bottom:50px;
+		background:url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2OLdz?ver=d01f&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=232&s=1898&d=712&aim=true) no-repeat;
+		background-size:140% 100%;
+		padding-left:100px;
+		display:flex;
+		align-items:center;
+		overflow:hidden;
+		height:600px;
+	}
+	.main-outlook-div {
+		width:700px;
+		margin-top:10%;
+		margin-bottom:10%;
+	}
+	.main-outlook-div-subdiv {
+		width:100%;
+	}
+	.main-outlook-div-subdiv-h1 {
+		font:26px sans-serif;
+		font-weight:bold;
+		color:#000;
+		text-decoration:none;
+		margin:0px 0px 20px 0px;
+	}
+	.main-outlook-div-subdiv-p {
+		font:14px sans-serif;
+		color:#fff;
+		text-decoration:none;
+		margin:0px 0px 30px 0px;
+	}
+	.main-outlook-div-subdiv-p-a {
+		font:15px sans-serif;
+		color:#000;
+		text-decoration:none;
+	}
+	.main-outlook-div-subdiv-button {
+		height:50px;
+		line-height:50px;
+		font:15px sans-serif;
+		background-color:#000;
+		padding:0px 10px 0px 10px;
+		color:#fff;
+	}
+	.main-outlook-div-subdiv-button:hover {
+		text-decoration: underline solid white 3px;
+		
+	}
+	.main-microsoft-divs {
+		width:90%;
+		height:100%;
+		margin-left:5%;
+		margin-right:5%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap:2%;
+	}
+	.main-microsoft-divs-block {
+		align-items:center;
+		margin-bottom:50px;
+	}
+	.main-microsoft-divs-block-img {
+		width:100%;
+		height:auto;
+		font-weight:600;
+		margin-bottom:50px;
+	}
+	.main-microsoft-divs-block-a-big {
+		font:28px sans-serif;
+		color:black;
+		text-decoration:none;
+		display:block;
+		margin-bottom:10px;
+	}
+	.main-microsoft-divs-block-a-small {
+		font:20px sans-serif;
+		line-height:27px;
+		color:#000;
+		text-decoration:none;
+		display:block;
+		margin-bottom:10px;
+	}
+	.main-microsoft-divs-block-a-users {
+		text-decoration:none;
+		color:#0067b8;
+		font:20px sans-serif;
+		font-weight:bold;
+		height:20px;
+		transition:all 1s ease;
+	}
+	.main-microsoft-divs-block-a-users-p {
+		display:inline;
+	}
+	.main-microsoft-divs-block-a-users::after {
+		content:">";
+		color:#0067b8;
+	}
+	.main-microsoft-divs-block-a-users-p:hover {
+		border-bottom:3px solid #0067b8;
+		margin-right:7px;
+		transition:all .3s ease;
+	}
+	.main-for_busines {
+		width:100%;
+		margin-bottom:50px;
+		height:100%;	
+	}
+	.main-for_busines-text_line {
+		width:100%;
+		height:75px;
+		line-height:15px;
+	}
+	.main-for_busines-text_line-p {
+		float:left;
+		font-size:30px;
+		font-weight:bold;
+	}
+	.main-for_busines-divs {
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap:2%;
+		margin-bottom:590px;
+	}
+	.main-for_busines-divs-block {
+		align-items:center;
+	}
+	.main-for_busines-text_line {
+		width:95%;
+		height:75px;
+		line-height:15px;
+		margin-left:5%;
+	}
+	.main-for_busines-text_line-p {
+		float:left;
+		font-size:30px;
+		font-weight:bold;
+	}
+	footer {
+		width:100%;
+		padding:30px 0px 0px 0px;
+		background-color:#f2f2f2;
+	}
+	.footer-top-divs {
+		width:90%;
+		margin:0px auto;
+		display:grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.look-microsoft {
+		width:95%;
+		height:65px;
+		line-height:65px;
+		margin-bottom:50px;
+		display:flex;
+		margin-left:5%;
+	}
+}
